@@ -1,6 +1,9 @@
 const path = require('path');
 const fs = require('fs');
-const input = fs.readFileSync(path.join(__dirname, 'sonar_sweep.txt'), 'utf8').toString().trim().split('\n').map((num) => parseInt(num, 10));
+
+const input = fs.readFileSync(path.join(__dirname, 'sonar_sweep.txt'), 'utf8').toString().trim().split('\n').map(
+    (line) => parseInt(line, 10)
+);
 
 const countIncreasedMeasurements = (measurements) => {
     let count = 0;
