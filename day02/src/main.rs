@@ -45,6 +45,6 @@ fn aim(filename: &str){
 }
 
 fn main() {
-    dive("input.txt");
-    aim("input.txt")
+    dive("day2.txt");
+    aim("day2.txt")
 }

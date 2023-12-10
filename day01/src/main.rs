@@ -24,11 +24,11 @@ fn count_increasing_measurements(readings: Vec<i64>) {
 
 pub fn main(){
     // Part 1
-    let readings = parse_readings("./input.txt");
+    let readings = parse_readings("day1.txt");
     count_increasing_measurements(readings);
 
     // Part 2
-    let readings = parse_readings("./input.txt");
+    let readings = parse_readings("day1.txt");
     let mut sums: Vec<i64> = Vec::new();
     for i in 0..readings.len() - 2 {
         sums.push(readings[i]+readings[i+1]+readings[i+2])
