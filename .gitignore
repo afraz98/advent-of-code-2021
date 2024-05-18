@@ -12,3 +12,6 @@
 # Puzzle inputs
 *.txt
 *_test.txt
+
+# Puzzle descriptions
+day*/README.md
